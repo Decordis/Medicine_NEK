@@ -2,8 +2,8 @@ from tkinter import *
 
 class Clin_rec:
     def recomendation(self):
-        print("Также рекомендую ознакомиться с клиническими рекомендациями по НЭК")
-        print('https://www.mrckb.ru/files/nek.pdf')
+        print("Также рекомендую ознакомиться с проектом клинических рекомендаций по НЭК")
+        print('https://neonatology.pro/wp-content/uploads/2014/08/Protokol_NEC_2014.pdf')
 
         while True:
             try:

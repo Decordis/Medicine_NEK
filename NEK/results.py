@@ -4,27 +4,26 @@ class Result:
     def get_result(self):
         print(_all_)
         print(sum(_all_))
-        if 1 < sum(_all_) <= 3:
-            return  print(f'вероятность развития НЭК 1А!')
+        if 2 < sum(_all_) <= 3:
+            return print(f'Вероятность развития НЭК 1А!')
 
         elif 3 < sum(_all_) <= 6:
-            return  print(f'высокая вероятность развития НЭК 1B!')
+            return print(f'Высокая вероятность развития НЭК 1B!')
 
-        elif 6 < sum(_all_)  <= 9:
-            return  print(f'высокая вероятность развития НЭК 2А!')
+        elif 6 < sum(_all_) <= 9:
+            return print(f'Высокая вероятность развития НЭК 2А!')
 
-        elif 9 < sum(_all_)  <= 12:
-            return  print(f'высокая вероятность развития НЭК 2B!')
+        elif 9 < sum(_all_) <= 12:
+            return print(f'Высокая вероятность развития НЭК 2B!')
 
-        elif 12 < sum(_all_)  <= 15:
-            return  print(f'высокая вероятность развития НЭК 3А!')
+        elif 12 < sum(_all_) <= 15:
+            return print(f'Высокая вероятность развития НЭК 3А!')
 
-        elif 15 < sum(_all_)  <= 18:
-            return print(f'высокая вероятность развития НЭК 3B!')
+        elif 15 < sum(_all_) <= 18:
+            return print(f'Высокая вероятность развития НЭК 3B!')
 
         else:
-            return print(f'низкая вероятность развития НЭК')
-
+            return print(f'Низкая вероятность развития НЭК')
 
 class Therapy:
     def anti(self):

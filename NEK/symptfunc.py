@@ -9,19 +9,18 @@ class First_sym:
         print('Что из этого?')
         sym_empty = '0: ничего из этого'
         sympt_1A = ' | '.join(Theory.I_A.get('symptoms'))
-        sympt_1B = ' | '.join(Theory.I_B.get('symptoms'))
         sympt_2A = ' | '.join(Theory.II_A.get('symptoms'))
         sympt_2B = ' | '.join(Theory.II_B.get('symptoms'))
         sympt_3A = ' | '.join(Theory.III_A.get('symptoms'))
         sympt_3B = ' | '.join(Theory.III_B.get('symptoms'))
-        print(f' {sym_empty}\n {sympt_1A}\n {sympt_1B}\n {sympt_2A}\n'
+        print(f' {sym_empty}\n {sympt_1A}\n {sympt_2A}\n'
               f' {sympt_2B}\n {sympt_3A}\n {sympt_3B} ')
         while True:
             try:
                 the_sym = input("Введите цифру:")
                 if int(the_sym) in range(0, 7):
-                    if (the_sym in sympt_1A or the_sym in sympt_1B or the_sym in sympt_2A or
-                            the_sym in sympt_2B or the_sym in sympt_3A or the_sym in sympt_3B or
+                    if (the_sym in sympt_1A or the_sym in sympt_2A or the_sym in sympt_2B
+                            or the_sym in sympt_3A or the_sym in sympt_3B or
                             the_sym in sym_empty):
                         _all_.append(int(the_sym))
                         return _all_
@@ -71,20 +70,19 @@ class Third_sym:
         print('Что из этого?')
         ren_empty = '0: ничего из этого'
         ren_sympt_1A = ' | '.join(Theory.I_A.get('rengen'))
-        ren_sympt_1B = ' | '.join(Theory.I_B.get('rengen'))
         ren_sympt_2A = ' | '.join(Theory.II_A.get('rengen'))
         ren_sympt_2B = ' | '.join(Theory.II_B.get('rengen'))
         ren_sympt_3A = ' | '.join(Theory.III_A.get('rengen'))
         ren_sympt_3B = ' | '.join(Theory.III_B.get('rengen'))
-        print(f' {ren_empty}\n {ren_sympt_1A}\n {ren_sympt_1B}\n {ren_sympt_2A}\n'
+        print(f' {ren_empty}\n {ren_sympt_1A}\n {ren_sympt_2A}\n'
               f' {ren_sympt_2B}\n {ren_sympt_3A}\n {ren_sympt_3B} ')
         while True:
             try:
                 the_sym = input("Введите цифру:")
                 if int(the_sym) in range(0, 7):
-                    if (the_sym in ren_sympt_1A or the_sym in ren_sympt_1B or the_sym in ren_sympt_2A or
-                        the_sym in ren_sympt_2B or the_sym in ren_sympt_3A or the_sym in ren_sympt_3B or
-                        the_sym in ren_empty):
+                    if (the_sym in ren_sympt_1A or the_sym in ren_sympt_2A or the_sym in ren_sympt_2B or
+                            the_sym in ren_sympt_3A or the_sym in ren_sympt_3B or
+                            the_sym in ren_empty):
                         _all_.append(int(the_sym))
                         return _all_
             except ValueError:
@@ -92,4 +90,3 @@ class Third_sym:
                 continue
             else:
                 print("Неправильно введено число!")
-                continue

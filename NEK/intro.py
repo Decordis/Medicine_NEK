@@ -82,6 +82,8 @@ class Get_programm:
 
     def close(self):
         text = ("Отлично! Надеюсь, у меня получилось помочь Вам :)\n"
+                "Также Вы можете ознакомиться с другими клиническими рекомендациями на сайте:\n"
+                " https://neonatology.pro/resursnyiy-tsentr/protokolyi/\n"
                 "Для повторного анализа перезапустите программу \n")
         print(text)
         while True:

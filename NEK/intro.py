@@ -56,12 +56,11 @@ class Get_programm:
         print("'Варианты ответов: '")
         ren_empty = '0: ничего из этого'
         ren_sympt_1A = ' | '.join(Theory.I_A.get('rengen'))
-        ren_sympt_1B = ' | '.join(Theory.I_B.get('rengen'))
         ren_sympt_2A = ' | '.join(Theory.II_A.get('rengen'))
         ren_sympt_2B = ' | '.join(Theory.II_B.get('rengen'))
         ren_sympt_3A = ' | '.join(Theory.III_A.get('rengen'))
         ren_sympt_3B = ' | '.join(Theory.III_B.get('rengen'))
-        print(f' {ren_empty}\n {ren_sympt_1A}\n {ren_sympt_1B}\n {ren_sympt_2A}\n'
+        print(f' {ren_empty}\n {ren_sympt_1A}\n {ren_sympt_2A}\n'
               f' {ren_sympt_2B}\n {ren_sympt_3A}\n {ren_sympt_3B} \n')
 
         print("'Ваш ответ:' Где Вы указываете наиболее подходящий симптом")
